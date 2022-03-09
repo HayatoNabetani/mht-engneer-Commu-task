@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: EdgeInsets.fromLTRB(10, 20, 100, 80),//左、上、右、下
         child: Text('Text'),
         width: 500,
-        height: 250,
+        height: double.infinity,
       ),
     );
   }
