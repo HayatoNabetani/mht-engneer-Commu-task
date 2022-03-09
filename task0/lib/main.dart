@@ -27,32 +27,24 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+  var count = 5;
+  var text = "test";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child:Container(
-          child: Text('Text'),
-          width: 500,
-          height: double.infinity,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color: Colors.amberAccent,
-            shape: BoxShape.circle,
-          ),
-        ),
-      )
+      body: ListView.builder(
+          itemBuilder: (BuildContext context, int index) {
+            return Card(
+              child: Padding(
+                child: Text(text + '$index'),
+                padding: EdgeInsets.all(20.0),
+              ),
+            );
+          },
+          itemCount: count),
     );
   }
 }
