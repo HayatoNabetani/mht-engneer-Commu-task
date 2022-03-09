@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Text('Text'),
         width: 500,
         height: double.infinity,
+        alignment: Alignment.center,
       ),
     );
   }
