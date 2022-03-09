@@ -42,13 +42,20 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        color: Colors.green,
         margin: EdgeInsets.fromLTRB(100, 20, 30, 40),
         padding: EdgeInsets.fromLTRB(10, 20, 100, 80),//左、上、右、下
         child: Text('Text'),
         width: 500,
         height: double.infinity,
         alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: Colors.amberAccent,
+          borderRadius: BorderRadius.circular(5.0),
+          border: Border.all(
+            color: Colors.black,
+            width: 3,
+          ),
+        ),
       ),
     );
   }
