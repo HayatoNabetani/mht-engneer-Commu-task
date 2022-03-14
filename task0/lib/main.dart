@@ -35,16 +35,24 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: ListView.builder(
-          itemBuilder: (BuildContext context, int index) {
-            return Card(
-              child: Padding(
-                child: Text(text + '$index'),
-                padding: EdgeInsets.all(20),
-              ),
-            );
-          },
-          itemCount: count),
+      body: Center(
+        child:Container(
+          margin: EdgeInsets.fromLTRB(100, 20, 30, 40),
+          padding: EdgeInsets.fromLTRB(10, 20, 100, 80),//左、上、右、下
+          child: Text('Text'),
+          width: 500,
+          height: double.infinity,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: Colors.amberAccent,
+            borderRadius: BorderRadius.circular(5),
+            border: Border.all(
+              color: Colors.black,
+              width: 3,
+            ),
+          )
+        )
+      )
     );
   }
 }
