@@ -43,9 +43,57 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: HexColor("#5000B7")
-      ),
+      backgroundColor: HexColor("#5000B7"),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.fromLTRB(20, 150, 20, 10),
+              child: Text(
+                "your\nportfolio",
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 32,
+                  color: Colors.white,
+                ),
+              )
+            ),
+
+            Container(
+              child: TextField(
+                style:TextStyle(
+                  color: Colors.white,
+                ),
+                decoration: InputDecoration(
+                  hintText: 'Email address'
+                ),
+              )
+            ),
+
+            Container(
+              child: TextField(
+                style:TextStyle(
+                  color: Colors.white,
+                ),
+                decoration: InputDecoration(
+                  hintText: 'password'
+                ),
+              )
+            ),
+
+            Container(
+              child: RaisedButton(
+                child: Text('フォーカス'),
+                onPressed: () {
+                  // TODO: ここにフォーカスするためのコードを書く
+                },
+              )
+            ),
+            
+          ]
+        ),
+      )
     );
   }
 }
