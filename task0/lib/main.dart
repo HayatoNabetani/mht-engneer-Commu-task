@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
             return Card(
               child: Padding(
                 child: Text(text + '$index'),
-                padding: EdgeInsets.all(20.0),
+                padding: EdgeInsets.all(20),
               ),
             );
           },
