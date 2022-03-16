@@ -42,18 +42,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final double deviceHeight = MediaQuery.of(context).size.height;
+    final double deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: HexColor("#5000B7"),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.fromLTRB(20, 150, 20, 10),
         child: Column(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.fromLTRB(20, 150, 20, 10),
+              width: deviceWidth,
+              padding: EdgeInsets.fromLTRB(20, 20, 20, 80),
               child: Text(
                 "your\nportfolio",
                 style: TextStyle(
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.bold,
                   fontSize: 32,
                   color: Colors.white,
                 ),
@@ -61,23 +64,39 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Container(
+              margin:EdgeInsets.fromLTRB(20, 10, 20, 0),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(5),
+              ),
               child: TextField(
                 style:TextStyle(
                   color: Colors.white,
                 ),
                 decoration: InputDecoration(
-                  hintText: 'Email address'
+                  hintText: 'Email address',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
                 ),
               )
             ),
 
             Container(
+              margin:EdgeInsets.fromLTRB(20, 5, 20, 10),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(5),
+              ),
               child: TextField(
                 style:TextStyle(
                   color: Colors.white,
                 ),
                 decoration: InputDecoration(
-                  hintText: 'password'
+                  hintText: 'password',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
                 ),
               )
             ),
