@@ -113,8 +113,22 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Container(
-              child: RaisedButton(
-                child: Text('フォーカス'),
+              margin:EdgeInsets.fromLTRB(0, 40, 0, 0),
+              width: deviceWidth,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: HexColor("FF473A"), //ボタンの背景色
+                  padding: EdgeInsets.fromLTRB(10,20,10,20)
+                ),
+                child: Text(
+                  'ログイン',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
                 onPressed: () {
                   // TODO: ここにフォーカスするためのコードを書く
                 },
