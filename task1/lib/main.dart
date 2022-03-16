@@ -69,9 +69,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
               ),
-              child: TextField(
+              child: TextFormField(
+                obscureText:false,
+                autocorrect:true,
+                enableInteractiveSelection:true,
+                keyboardType:TextInputType.emailAddress,
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 decoration: InputDecoration(
                   hintText: 'Email address',
@@ -88,9 +92,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
               ),
-              child: TextField(
+              child: TextFormField(
+                obscureText:true,
+                autocorrect:false,
+                enableInteractiveSelection:false,
+                keyboardType:TextInputType.visiblePassword,
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 decoration: InputDecoration(
                   hintText: 'password',
