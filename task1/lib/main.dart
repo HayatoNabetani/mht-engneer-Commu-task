@@ -47,12 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: HexColor("#5000B7"),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(20, 150, 20, 10),
+        padding: EdgeInsets.fromLTRB(40, 150, 40, 10),
         child: Column(
           children: <Widget>[
             Container(
               width: deviceWidth,
-              padding: EdgeInsets.fromLTRB(20, 20, 20, 80),
+              padding: EdgeInsets.fromLTRB(0, 20, 0, 80),
               child: Text(
                 "your\nportfolio",
                 style: TextStyle(
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Container(
-              margin:EdgeInsets.fromLTRB(20, 10, 20, 0),
+              margin:EdgeInsets.fromLTRB(0, 10, 0, 0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Container(
-              margin:EdgeInsets.fromLTRB(20, 5, 20, 10),
+              margin:EdgeInsets.fromLTRB(0, 5, 0, 10),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
@@ -97,6 +97,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),
+                ),
+              )
+            ),
+
+            Container(
+              width: deviceWidth,
+              child: Text(
+                "Forget your password?",
+                textAlign: TextAlign.end,
+                style: TextStyle(
+                  color: Colors.white,
                 ),
               )
             ),
