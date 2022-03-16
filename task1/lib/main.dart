@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               width: deviceWidth,
               padding: EdgeInsets.fromLTRB(0, 20, 0, 80),
-              child: Text(
+              child: const Text(
                 "your\nportfolio",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -64,13 +64,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Container(
-              margin:EdgeInsets.fromLTRB(0, 10, 0, 0),
+              margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
               ),
               child: TextField(
-                style:TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                 ),
                 decoration: InputDecoration(
@@ -83,13 +83,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Container(
-              margin:EdgeInsets.fromLTRB(0, 5, 0, 10),
+              margin: const EdgeInsets.fromLTRB(0, 5, 0, 10),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
               ),
               child: TextField(
-                style:TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                 ),
                 decoration: InputDecoration(
@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             Container(
               width: deviceWidth,
-              child: Text(
+              child: const Text(
                 "Forget your password?",
                 textAlign: TextAlign.end,
                 style: TextStyle(
@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Container(
-              margin:EdgeInsets.fromLTRB(0, 40, 0, 0),
+              margin:const EdgeInsets.fromLTRB(0, 40, 0, 0),
               width: deviceWidth,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
@@ -121,9 +121,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   primary: HexColor("FF473A"), //ボタンの背景色
-                  padding: EdgeInsets.fromLTRB(10,20,10,20)
+                  padding: const EdgeInsets.fromLTRB(10,20,10,20)
                 ),
-                child: Text(
+                child: const Text(
                   'ログイン',
                   style: TextStyle(
                     color: Colors.white,
